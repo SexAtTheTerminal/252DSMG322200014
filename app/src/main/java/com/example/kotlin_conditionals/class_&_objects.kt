@@ -3,7 +3,6 @@ package com.example.kotlin_conditionals
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
-// Clase reguladora de rangos
 class RangeRegulator(
     initialValue: Int,
     private val minValue: Int,
@@ -44,7 +43,6 @@ class SmartDevice(val name: String, val category: String) {
         println("Smart device is turned off.")
     }
 
-    // 🔹 NUEVO MÉTODO: imprimir información del dispositivo
     fun printDeviceInfo() {
         val deviceType = "unknown"
         println("Device name: $name, category: $category, type: $deviceType")
@@ -94,7 +92,6 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
         }
     }
 
-    // 🔹 NUEVO MÉTODO: disminuir volumen
     fun decreaseVolume() {
         if (deviceStatus == "on") {
             speakerVolume--
@@ -109,7 +106,7 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
         }
     }
 
-    // 🔹 NUEVO MÉTODO: canal anterior
+    //  NUEVO MÉTODO: canal anterior
     fun previousChannel() {
         if (deviceStatus == "on") {
             channelNumber--
@@ -130,7 +127,6 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
         println("$name turned off")
     }
 
-    // 🔹 NUEVO MÉTODO: imprimir información
     fun printDeviceInfo() {
         println("Device name: $name, category: $category, type: $deviceType")
     }
@@ -151,7 +147,6 @@ class SmartLightDevice(deviceName: String, deviceCategory: String) :
         }
     }
 
-    // 🔹 NUEVO MÉTODO: disminuir brillo
     fun decreaseBrightness() {
         if (deviceStatus == "on") {
             brightnessLevel--
@@ -171,7 +166,6 @@ class SmartLightDevice(deviceName: String, deviceCategory: String) :
         println("Smart Light turned off")
     }
 
-    // 🔹 NUEVO MÉTODO: imprimir información
     fun printDeviceInfo() {
         println("Device name: $name, category: $category, type: $deviceType")
     }

@@ -25,7 +25,7 @@ fun main() {
     treatFunction2()
     trickFunction2()
 
-    val treatFunction3 = trickOrTreat2(false, { "$it quarters" })
+    val treatFunction3 = trickOrTreat2(false, {"$it quarters"})
     val trickFunction3 = trickOrTreat2(true,  {""})
 
     treatFunction3()
@@ -65,5 +65,3 @@ fun trickOrTreat2(isTrick: Boolean, extraTreat: (Int) -> String): () -> Unit {
         return treat
     }
 }
-
-
