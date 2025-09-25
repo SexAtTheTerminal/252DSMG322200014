@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.kotlin_conditionals.ui.theme.KotlinconditionalsTheme
 
+/*
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,12 +38,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
+*/
 
-
+/*
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     KotlinconditionalsTheme {
         Greeting("Android")
     }
-}
+}*/
