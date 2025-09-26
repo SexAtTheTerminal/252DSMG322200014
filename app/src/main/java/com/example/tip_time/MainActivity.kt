@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.compose.material3.Icon
 import androidx.annotation.StringRes
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.layout.Column
@@ -164,7 +165,8 @@ fun RoundTheTipRow(
     }
 }
 
-private fun calculateTip(amount: Double, tipPercent: Double = 15.0, roundUp: Boolean): String {
+@VisibleForTesting
+internal fun calculateTip(amount: Double, tipPercent: Double = 15.0, roundUp: Boolean): String {
     var tip = tipPercent / 100 * amount
 
     if(roundUp){
